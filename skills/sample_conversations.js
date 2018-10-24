@@ -15,7 +15,6 @@ module.exports = function(controller) {
 
         bot.startConversation(message, function(err, convo) {
             convo.say('This is an example of using convo.ask with a single callback.');
-            convo.say('Yay I got it working!');
 
             convo.ask('What is your favorite color?', function(response, convo) {
 
@@ -25,13 +24,6 @@ module.exports = function(controller) {
             });
         });
 
-    });
-  
-    controller.hears([':avocado:'], 'direct_message,direct_mention', function(bot, message) {
-      bot.startConversation(message, function(err, convo) {
-        convo.say('I love avocaodos!');
-        console.log(message);
-      });
     });
 
 
