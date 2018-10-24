@@ -15,6 +15,7 @@ module.exports = function(controller) {
 
         bot.startConversation(message, function(err, convo) {
             convo.say('This is an example of using convo.ask with a single callback.');
+            convo.say('git pushing to glitch is working!');
 
             convo.ask('What is your favorite color?', function(response, convo) {
 
