@@ -3,7 +3,6 @@ module.exports = function(controller) {
         // bot.startConversation(message, (err, convo) => {
             // convo.say("I love avocados!")
         // })
-
-        bot.reply("I love avocados!")
+        bot.reply(message, "I love avocados!")
     })
 }
